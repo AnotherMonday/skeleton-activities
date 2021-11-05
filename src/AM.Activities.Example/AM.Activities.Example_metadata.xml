@@ -1,80 +1,78 @@
 <ProjectMetadata>
-    <Metadata>
-        <ActivityMetadata ActivityType="AM.Activities.Example.ErrorMessageExample.WarningMessageActivity">
-            <DisplayName>Warning Message</DisplayName>
-            <Description>Example of how to create a Error Message</Description>
-            <Category>Error and Warning</Category>
-            <SearchTags>Warning</SearchTags>
-            <PropertiesMetadata>
-                <PropertyMetadata PropertyName="Text" DisplayName="Text" RequiredArgument="false" VariableSelectionInputTextPopup="true" VariableSelectionInputVariablePopup="false" VariableSelectionOutputPopup="false" Order="0" />
-                <PropertyMetadata PropertyName="Output" DisplayName="Output" RequiredArgument="false" VariableSelectionInputTextPopup="false" VariableSelectionInputVariablePopup="false" VariableSelectionOutputPopup="false" Order="0" />
-            </PropertiesMetadata>
-        </ActivityMetadata>
-        <ActivityMetadata ActivityType="AM.Activities.Example.AsyncExample.AsyncWithResultActivity">
-            <DisplayName>Async Activity with Result</DisplayName>
-            <Description>Example of a Async Activity with Result</Description>
-            <Category>Async Activity</Category>
-            <SearchTags>Async Activity, Result</SearchTags>
-            <PropertiesMetadata />
-        </ActivityMetadata>
-        <ActivityMetadata ActivityType="AM.Activities.Example.DatabaseExample.DatabaseExampleActivity">
-            <DisplayName>Database</DisplayName>
-            <Description>Database Example</Description>
-            <Category>Database</Category>
-            <SearchTags>Database</SearchTags>
-            <PropertiesMetadata>
-                <PropertyMetadata PropertyName="Query" DisplayName="Query" Description="SQL Query" RequiredArgument="false" Category="Input" VariableSelectionInputTextPopup="true" VariableSelectionInputVariablePopup="false" VariableSelectionOutputPopup="false" Order="0" />
-                <PropertyMetadata PropertyName="ResultTable" DisplayName="Result" Description="Query Result" RequiredArgument="false" Category="Output" VariableSelectionInputTextPopup="false" VariableSelectionInputVariablePopup="false" VariableSelectionOutputPopup="false" Order="0" />
-            </PropertiesMetadata>
-        </ActivityMetadata>
-        <ActivityMetadata ActivityType="AM.Activities.Example.CustomEditor.CustomEditorCodeActivity">
-            <DisplayName>Custom Editor</DisplayName>
-            <Description>Example of a Custom Editor</Description>
-            <Category>Custom Editor</Category>
-            <PropertiesMetadata />
-        </ActivityMetadata>
-        <ActivityMetadata ActivityType="AM.Activities.Example.ExampleCodeActivity">
-            <DisplayName>Code Activity</DisplayName>
-            <Description>Example of a Code Activity</Description>
-            <Category>Code Activity</Category>
-            <SearchTags>Code Activity</SearchTags>
-            <PropertiesMetadata>
-                <PropertyMetadata PropertyName="Text" DisplayName="Text" RequiredArgument="false" VariableSelectionInputTextPopup="false" VariableSelectionInputVariablePopup="false" VariableSelectionOutputPopup="false" Order="0" />
-                <PropertyMetadata PropertyName="Output" DisplayName="Output" RequiredArgument="false" Category="Output" VariableSelectionInputTextPopup="false" VariableSelectionInputVariablePopup="false" VariableSelectionOutputPopup="true" Order="0" />
-            </PropertiesMetadata>
-        </ActivityMetadata>
-        <ActivityMetadata ActivityType="AM.Activities.Example.ErrorMessageExample.ErrorMessageActivity">
-            <DisplayName>Error Message</DisplayName>
-            <Description>Example of how to create a Error Message</Description>
-            <Category>Error and Warning</Category>
-            <SearchTags>Error</SearchTags>
-            <PropertiesMetadata>
-                <PropertyMetadata PropertyName="Text" DisplayName="Text" Description="Input Text" RequiredArgument="false" Category="Input" VariableSelectionInputTextPopup="true" VariableSelectionInputVariablePopup="false" VariableSelectionOutputPopup="false" Order="0" />
-                <PropertyMetadata PropertyName="Output" DisplayName="Output" Description="Output Value" RequiredArgument="false" Category="Output" VariableSelectionInputTextPopup="false" VariableSelectionInputVariablePopup="false" VariableSelectionOutputPopup="true" Order="0" />
-            </PropertiesMetadata>
-        </ActivityMetadata>
-        <ActivityMetadata ActivityType="AM.Activities.Example.AsyncExample.AsyncActivity">
-            <DisplayName>Async Activity</DisplayName>
-            <Description>Example of a Async Activity</Description>
-            <Category>Async Activity</Category>
-            <SearchTags>Async Activity</SearchTags>
-            <PropertiesMetadata>
-                <PropertyMetadata PropertyName="FilePath" DisplayName="File Path" Description="Path to the file to be processed" RequiredArgument="false" Category="Input" VariableSelectionInputTextPopup="false" VariableSelectionInputVariablePopup="false" VariableSelectionOutputPopup="false" Order="0" />
-            </PropertiesMetadata>
-        </ActivityMetadata>
-        <ActivityMetadata ActivityType="AM.Activities.Example.ScopeExample.ChildActivity">
-            <DisplayName>Scope Child</DisplayName>
-            <Description>Example of a Child for a specific scope</Description>
-            <Category>Scope</Category>
-            <PropertiesMetadata>
-                <PropertyMetadata PropertyName="Option" DisplayName="Option" RequiredArgument="false" VariableSelectionInputTextPopup="false" VariableSelectionInputVariablePopup="false" VariableSelectionOutputPopup="false" Order="0" />
-            </PropertiesMetadata>
-        </ActivityMetadata>
-        <ActivityMetadata ActivityType="AM.Activities.Example.ScopeExample.ScopeActivity">
-            <DisplayName>Scope Activity</DisplayName>
-            <Description>Example of a Scope activity</Description>
-            <Category>Scope</Category>
-            <PropertiesMetadata />
-        </ActivityMetadata>
-    </Metadata>
+  <ActivityMetadata ActivityType="AM.Activities.Example.ErrorMessageExample.WarningMessageActivity">
+    <DisplayName>Warning Message</DisplayName>
+    <Description>Example of how to create a Error Message</Description>
+    <Category>Error and Warning</Category>
+    <SearchTags>Warning</SearchTags>
+    <PropertiesMetadata>
+      <PropertyMetadata PropertyName="Text" DisplayName="Text" RequiredArgument="false" VariableSelectionInputTextPopup="true" VariableSelectionInputVariablePopup="false" VariableSelectionOutputPopup="false" Order="0" />
+      <PropertyMetadata PropertyName="Output" DisplayName="Output" RequiredArgument="false" VariableSelectionInputTextPopup="false" VariableSelectionInputVariablePopup="false" VariableSelectionOutputPopup="false" Order="0" />
+    </PropertiesMetadata>
+  </ActivityMetadata>
+  <ActivityMetadata ActivityType="AM.Activities.Example.AsyncExample.AsyncWithResultActivity">
+    <DisplayName>Async Activity with Result</DisplayName>
+    <Description>Example of a Async Activity with Result</Description>
+    <Category>Async Activity</Category>
+    <SearchTags>Async Activity, Result</SearchTags>
+    <PropertiesMetadata />
+  </ActivityMetadata>
+  <ActivityMetadata ActivityType="AM.Activities.Example.DatabaseExample.DatabaseExampleActivity">
+    <DisplayName>Database</DisplayName>
+    <Description>Database Example</Description>
+    <Category>Database</Category>
+    <SearchTags>Database</SearchTags>
+    <PropertiesMetadata>
+      <PropertyMetadata PropertyName="Query" DisplayName="Query" Description="SQL Query" RequiredArgument="false" Category="Input" VariableSelectionInputTextPopup="true" VariableSelectionInputVariablePopup="false" VariableSelectionOutputPopup="false" Order="0" />
+      <PropertyMetadata PropertyName="ResultTable" DisplayName="Result" Description="Query Result" RequiredArgument="false" Category="Output" VariableSelectionInputTextPopup="false" VariableSelectionInputVariablePopup="false" VariableSelectionOutputPopup="false" Order="0" />
+    </PropertiesMetadata>
+  </ActivityMetadata>
+  <ActivityMetadata ActivityType="AM.Activities.Example.CustomEditor.CustomEditorCodeActivity">
+    <DisplayName>Custom Editor</DisplayName>
+    <Description>Example of a Custom Editor</Description>
+    <Category>Custom Editor</Category>
+    <PropertiesMetadata />
+  </ActivityMetadata>
+  <ActivityMetadata ActivityType="AM.Activities.Example.ExampleCodeActivity">
+    <DisplayName>Code Activity</DisplayName>
+    <Description>Example of a Code Activity</Description>
+    <Category>Code Activity</Category>
+    <SearchTags>Code Activity</SearchTags>
+    <PropertiesMetadata>
+      <PropertyMetadata PropertyName="Text" DisplayName="Text" RequiredArgument="false" VariableSelectionInputTextPopup="false" VariableSelectionInputVariablePopup="false" VariableSelectionOutputPopup="false" Order="0" />
+      <PropertyMetadata PropertyName="Output" DisplayName="Output" RequiredArgument="false" Category="Output" VariableSelectionInputTextPopup="false" VariableSelectionInputVariablePopup="false" VariableSelectionOutputPopup="true" Order="0" />
+    </PropertiesMetadata>
+  </ActivityMetadata>
+  <ActivityMetadata ActivityType="AM.Activities.Example.ErrorMessageExample.ErrorMessageActivity">
+    <DisplayName>Error Message</DisplayName>
+    <Description>Example of how to create a Error Message</Description>
+    <Category>Error and Warning</Category>
+    <SearchTags>Error</SearchTags>
+    <PropertiesMetadata>
+      <PropertyMetadata PropertyName="Text" DisplayName="Text" Description="Input Text" RequiredArgument="false" Category="Input" VariableSelectionInputTextPopup="true" VariableSelectionInputVariablePopup="false" VariableSelectionOutputPopup="false" Order="0" />
+      <PropertyMetadata PropertyName="Output" DisplayName="Output" Description="Output Value" RequiredArgument="false" Category="Output" VariableSelectionInputTextPopup="false" VariableSelectionInputVariablePopup="false" VariableSelectionOutputPopup="true" Order="0" />
+    </PropertiesMetadata>
+  </ActivityMetadata>
+  <ActivityMetadata ActivityType="AM.Activities.Example.AsyncExample.AsyncActivity">
+    <DisplayName>Async Activity</DisplayName>
+    <Description>Example of a Async Activity</Description>
+    <Category>Async Activity</Category>
+    <SearchTags>Async Activity</SearchTags>
+    <PropertiesMetadata>
+      <PropertyMetadata PropertyName="FilePath" DisplayName="File Path" Description="Path to the file to be processed" RequiredArgument="false" Category="Input" VariableSelectionInputTextPopup="false" VariableSelectionInputVariablePopup="false" VariableSelectionOutputPopup="false" Order="0" />
+    </PropertiesMetadata>
+  </ActivityMetadata>
+  <ActivityMetadata ActivityType="AM.Activities.Example.ScopeExample.ChildActivity">
+    <DisplayName>Scope Child</DisplayName>
+    <Description>Example of a Child for a specific scope</Description>
+    <Category>Scope</Category>
+    <PropertiesMetadata>
+      <PropertyMetadata PropertyName="Option" DisplayName="Option" RequiredArgument="false" VariableSelectionInputTextPopup="false" VariableSelectionInputVariablePopup="false" VariableSelectionOutputPopup="false" Order="0" />
+    </PropertiesMetadata>
+  </ActivityMetadata>
+  <ActivityMetadata ActivityType="AM.Activities.Example.ScopeExample.ScopeActivity">
+    <DisplayName>Scope Activity</DisplayName>
+    <Description>Example of a Scope activity</Description>
+    <Category>Scope</Category>
+    <PropertiesMetadata />
+  </ActivityMetadata>
 </ProjectMetadata>

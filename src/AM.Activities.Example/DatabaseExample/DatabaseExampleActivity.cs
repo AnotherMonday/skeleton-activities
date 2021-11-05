@@ -21,14 +21,14 @@ namespace AM.Activities.Example.DatabaseExample
         ///     Input Argument of a SQL Query to select data by.
         /// </summary>
         [Category("Input")]
-        [VariableSelectionInputTextPopup]
+        [VariablePopup]
         public InArgument<string> Query { get; set; }
 
         /// <summary>
         ///     Output Argument to return the requested data as a DataTable
         /// </summary>
         [Category("Output")]
-        [VariableSelectionOutputPopup]
+        [VariablePopup]
         public OutArgument<DataTable> ResultTable { get; set; }
 
         /// <summary>

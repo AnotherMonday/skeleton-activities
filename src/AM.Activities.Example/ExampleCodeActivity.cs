@@ -16,7 +16,7 @@ namespace AM.Activities.Example
         [Category("Input")] // Specifies the name of the category in which to group the property.
         [DisplayName("Input Text*")] // Specifies the display name for this property.
         [RequiredArgument] // Specifies that this property needs to be set 
-        [VariableSelectionInputTextPopup] // For this property, we show a variable dialog.
+        [VariablePopup] // For this property, we show a variable dialog.
         [Description("This text will be shown in the output")] // Specifies a description for a property
         public InArgument<string> Text { get; set; }
 
