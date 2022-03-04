@@ -143,7 +143,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="TextToSpeechActivity.cs" />
     <Compile Include="ExampleApplication.cs" />
     <Compile Include="ExamplePropertyOptions.cs" />
     <Compile Include="IExampleApplication.cs" />

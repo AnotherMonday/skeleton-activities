@@ -62,9 +62,3 @@ AM.Activities.Example.ScopeExample.ScopeActivity.DisplayName;Scope Activity
 AM.Activities.Example.ScopeExample.ScopeActivity.Description;Example of a Scope activity
 AM.Activities.Example.ScopeExample.ScopeActivity.Category;Example
 AM.Activities.Example.ScopeExample.ScopeActivity.SearchTags;
-AM.Activities.Example.ScopeExample.TextToSpeechActivity.DisplayName;Text To Speech
-AM.Activities.Example.TextToSpeechActivity.Description;
-AM.Activities.Example.TextToSpeechActivity.Category;Example
-AM.Activities.Example.TextToSpeechActivity.PropertyMetadata.Text.DisplayName;Text
-AM.Activities.Example.TextToSpeechActivity.PropertyMetadata.Text.Description;Text to be spoken
-AM.Activities.Example.TextToSpeechActivity.PropertyMetadata.Text.Category;Input
