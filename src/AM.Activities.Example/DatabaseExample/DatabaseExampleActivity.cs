@@ -1,13 +1,9 @@
-using System;
 using System.Activities;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Threading;
 using System.Threading.Tasks;
 using AM.Activities.Common.BaseActivities;
-using AM.ComposerActivitiesBridge.Attributes;
-using AM.Logging;
 
 namespace AM.Activities.Example.DatabaseExample
 {
@@ -20,15 +16,11 @@ namespace AM.Activities.Example.DatabaseExample
         /// <summary>
         ///     Input Argument of a SQL Query to select data by.
         /// </summary>
-        [Category("Input")]
-        [VariablePopup]
         public InArgument<string> Query { get; set; }
 
         /// <summary>
         ///     Output Argument to return the requested data as a DataTable
         /// </summary>
-        [Category("Output")]
-        [VariablePopup]
         public OutArgument<DataTable> ResultTable { get; set; }
 
         /// <summary>
@@ -48,35 +40,27 @@ namespace AM.Activities.Example.DatabaseExample
             return Task.Factory.StartNew(
                 () =>
                 {
-                    try
+                    DataTable dataTable = new DataTable();
+
+                    // Create a SQL connection to the Server
+                    using (SqlConnection connection = new SqlConnection(connectionString))
                     {
-                        DataTable dataTable = new DataTable();
-
-                        // Create a SQL connection to the Server
-                        using (SqlConnection connection = new SqlConnection(connectionString))
+                        // Execute SQL Query
+                        using (SqlCommand sqlCommand = new SqlCommand(query, connection))
                         {
-                            // Execute SQL Query
-                            using (SqlCommand sqlCommand = new SqlCommand(query, connection))
-                            {
-                                connection.Open();
+                            connection.Open();
 
-                                // Fill the Datable with the request data
-                                using (SqlDataAdapter dataAdapter = new SqlDataAdapter(sqlCommand))
-                                {
-                                    dataAdapter.Fill(dataTable);
-                                    connection.Close();
-                                }
+                            // Fill the Datable with the request data
+                            using (SqlDataAdapter dataAdapter = new SqlDataAdapter(sqlCommand))
+                            {
+                                dataAdapter.Fill(dataTable);
+                                connection.Close();
                             }
                         }
+                    }
 
-                        // After a successful execution return the DataTable
-                        return dataTable;
-                    }
-                    catch (Exception ex)
-                    {
-                        LogHelper.Error(ex.ToString());
-                        throw;
-                    }
+                    // After a successful execution return the DataTable
+                    return dataTable;
                 },
                 cancellationToken);
         }
