@@ -1,7 +1,5 @@
 <sap:ActivityDesigner
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:system="clr-namespace:System;assembly=mscorlib"
-    xmlns:sapv="clr-namespace:System.Activities.Presentation.View;assembly=System.Activities.Presentation"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     x:Class="AM.Activities.Example.Design.AsyncExample.AsyncDeveloperDesigner"
     xmlns:sap="clr-namespace:System.Activities.Presentation;assembly=System.Activities.Presentation"
@@ -21,32 +19,26 @@
             <DataTemplate x:Key="Collapsed">
                 <am:CodeActivityWrapper>
                     <Grid>
-                        <Grid.RowDefinitions>
-                            <RowDefinition />
-                        </Grid.RowDefinitions>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition />
                             <ColumnDefinition />
                         </Grid.ColumnDefinitions>
                         <TextBlock Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" Text="{Binding ConverterParameter=FilePath, Converter={StaticResource PropertyDisplayNameConverter}}"
                                    ToolTip="{Binding ConverterParameter=FilePath, Converter={StaticResource PropertyDescriptionConverter}}" />
-                        <am:PathControl Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" PathProperty="{Binding Path=ModelItem.FilePath, Mode=TwoWay, Converter={StaticResource ArgumentToExpressionConverter}, ConverterParameter=In }" PropertyName="FilePath" ActivityModelItem="{Binding Path=ModelItem}" />
+                        <am:OpenFileControl Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" PathProperty="{Binding Path=ModelItem.FilePath, Mode=TwoWay, Converter={StaticResource ArgumentToExpressionConverter}, ConverterParameter=In }" PropertyName="FilePath" ActivityModelItem="{Binding Path=ModelItem}" />
                     </Grid>
                 </am:CodeActivityWrapper>
             </DataTemplate>
             <DataTemplate x:Key="Expanded">
                 <am:CodeActivityWrapper>
                     <Grid>
-                        <Grid.RowDefinitions>
-                            <RowDefinition />
-                        </Grid.RowDefinitions>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition />
                             <ColumnDefinition />
                         </Grid.ColumnDefinitions>
                         <TextBlock Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" Text="{Binding ConverterParameter=FilePath, Converter={StaticResource PropertyDisplayNameConverter}}"
                                    ToolTip="{Binding ConverterParameter=FilePath, Converter={StaticResource PropertyDescriptionConverter}}" />
-                        <am:PathControl Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" PathProperty="{Binding Path=ModelItem.FilePath, Mode=TwoWay, Converter={StaticResource ArgumentToExpressionConverter}, ConverterParameter=In }" PropertyName="FilePath" ActivityModelItem="{Binding Path=ModelItem}" />
+                        <am:OpenFileControl Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" PathProperty="{Binding Path=ModelItem.FilePath, Mode=TwoWay, Converter={StaticResource ArgumentToExpressionConverter}, ConverterParameter=In }" PropertyName="FilePath" ActivityModelItem="{Binding Path=ModelItem}" />
                     </Grid>
                 </am:CodeActivityWrapper>
             </DataTemplate>

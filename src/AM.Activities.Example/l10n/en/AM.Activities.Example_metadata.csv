@@ -1,20 +1,6 @@
-﻿AM.Activities.Example.ErrorMessageExample.WarningMessageActivity.DisplayName;Warning Message
-AM.Activities.Example.ErrorMessageExample.WarningMessageActivity.Description;Example of how to create a Error Message
-AM.Activities.Example.ErrorMessageExample.WarningMessageActivity.Category;Error and Warning
-AM.Activities.Example.ErrorMessageExample.WarningMessageActivity.SearchTags;Warning
-AM.Activities.Example.ErrorMessageExample.WarningMessageActivity.PropertyMetadata.Text.DisplayName;Text
-AM.Activities.Example.ErrorMessageExample.WarningMessageActivity.PropertyMetadata.Text.Description;
-AM.Activities.Example.ErrorMessageExample.WarningMessageActivity.PropertyMetadata.Text.Category;Input
-AM.Activities.Example.ErrorMessageExample.WarningMessageActivity.PropertyMetadata.Output.DisplayName;Output
-AM.Activities.Example.ErrorMessageExample.WarningMessageActivity.PropertyMetadata.Output.Description;
-AM.Activities.Example.ErrorMessageExample.WarningMessageActivity.PropertyMetadata.Output.Category;Output
-AM.Activities.Example.AsyncExample.AsyncWithResultActivity.DisplayName;Async Activity with Result
-AM.Activities.Example.AsyncExample.AsyncWithResultActivity.Description;Example of a Async Activity with Result
-AM.Activities.Example.AsyncExample.AsyncWithResultActivity.Category;Async Activity
-AM.Activities.Example.AsyncExample.AsyncWithResultActivity.SearchTags;Async Activity, Result
-AM.Activities.Example.DatabaseExample.DatabaseExampleActivity.DisplayName;Database
+﻿AM.Activities.Example.DatabaseExample.DatabaseExampleActivity.DisplayName;Database
 AM.Activities.Example.DatabaseExample.DatabaseExampleActivity.Description;Database Example
-AM.Activities.Example.DatabaseExample.DatabaseExampleActivity.Category;Database
+AM.Activities.Example.DatabaseExample.DatabaseExampleActivity.Category;Example
 AM.Activities.Example.DatabaseExample.DatabaseExampleActivity.SearchTags;Database
 AM.Activities.Example.DatabaseExample.DatabaseExampleActivity.PropertyMetadata.Query.DisplayName;Query
 AM.Activities.Example.DatabaseExample.DatabaseExampleActivity.PropertyMetadata.Query.Description;SQL Query
@@ -24,10 +10,10 @@ AM.Activities.Example.DatabaseExample.DatabaseExampleActivity.PropertyMetadata.R
 AM.Activities.Example.DatabaseExample.DatabaseExampleActivity.PropertyMetadata.ResultTable.Category;Output
 AM.Activities.Example.CustomEditor.CustomEditorCodeActivity.DisplayName;Custom Editor
 AM.Activities.Example.CustomEditor.CustomEditorCodeActivity.Description;Example of a Custom Editor
-AM.Activities.Example.CustomEditor.CustomEditorCodeActivity.Category;Custom Editor
+AM.Activities.Example.CustomEditor.CustomEditorCodeActivity.Category;Example
 AM.Activities.Example.ExampleCodeActivity.DisplayName;Code Activity
 AM.Activities.Example.ExampleCodeActivity.Description;Example of a Code Activity
-AM.Activities.Example.ExampleCodeActivity.Category;Code Activity
+AM.Activities.Example.ExampleCodeActivity.Category;Example
 AM.Activities.Example.ExampleCodeActivity.SearchTags;Code Activity
 AM.Activities.Example.ExampleCodeActivity.PropertyMetadata.Text.DisplayName;Input Text
 AM.Activities.Example.ExampleCodeActivity.PropertyMetadata.Text.Description;This text will be shown in the output
@@ -37,7 +23,7 @@ AM.Activities.Example.ExampleCodeActivity.PropertyMetadata.Output.Description;Ou
 AM.Activities.Example.ExampleCodeActivity.PropertyMetadata.Output.Category;Output
 AM.Activities.Example.ErrorMessageExample.ErrorMessageActivity.DisplayName;Error Message
 AM.Activities.Example.ErrorMessageExample.ErrorMessageActivity.Description;Example of how to create a Error Message
-AM.Activities.Example.ErrorMessageExample.ErrorMessageActivity.Category;Error and Warning
+AM.Activities.Example.ErrorMessageExample.ErrorMessageActivity.Category;Example
 AM.Activities.Example.ErrorMessageExample.ErrorMessageActivity.SearchTags;Error
 AM.Activities.Example.ErrorMessageExample.ErrorMessageActivity.PropertyMetadata.Text.DisplayName;Text
 AM.Activities.Example.ErrorMessageExample.ErrorMessageActivity.PropertyMetadata.Text.Description;Input Text
@@ -45,20 +31,40 @@ AM.Activities.Example.ErrorMessageExample.ErrorMessageActivity.PropertyMetadata.
 AM.Activities.Example.ErrorMessageExample.ErrorMessageActivity.PropertyMetadata.Output.DisplayName;Output
 AM.Activities.Example.ErrorMessageExample.ErrorMessageActivity.PropertyMetadata.Output.Description;Output Value
 AM.Activities.Example.ErrorMessageExample.ErrorMessageActivity.PropertyMetadata.Output.Category;Output
+AM.Activities.Example.ErrorMessageExample.WarningMessageActivity.DisplayName;Warning Message
+AM.Activities.Example.ErrorMessageExample.WarningMessageActivity.Description;Example of how to create a Error Message
+AM.Activities.Example.ErrorMessageExample.WarningMessageActivity.Category;Example
+AM.Activities.Example.ErrorMessageExample.WarningMessageActivity.SearchTags;Warning
+AM.Activities.Example.ErrorMessageExample.WarningMessageActivity.PropertyMetadata.Text.DisplayName;Text
+AM.Activities.Example.ErrorMessageExample.WarningMessageActivity.PropertyMetadata.Text.Description;
+AM.Activities.Example.ErrorMessageExample.WarningMessageActivity.PropertyMetadata.Text.Category;Input
+AM.Activities.Example.ErrorMessageExample.WarningMessageActivity.PropertyMetadata.Output.DisplayName;Output
+AM.Activities.Example.ErrorMessageExample.WarningMessageActivity.PropertyMetadata.Output.Description;
+AM.Activities.Example.ErrorMessageExample.WarningMessageActivity.PropertyMetadata.Output.Category;Output
+AM.Activities.Example.AsyncExample.AsyncWithResultActivity.DisplayName;Async Activity with Result
+AM.Activities.Example.AsyncExample.AsyncWithResultActivity.Description;Example of a Async Activity with Result
+AM.Activities.Example.AsyncExample.AsyncWithResultActivity.Category;Example
+AM.Activities.Example.AsyncExample.AsyncWithResultActivity.SearchTags;Async Activity, Result
 AM.Activities.Example.AsyncExample.AsyncActivity.DisplayName;Async Activity
 AM.Activities.Example.AsyncExample.AsyncActivity.Description;Example of a Async Activity
-AM.Activities.Example.AsyncExample.AsyncActivity.Category;Async Activity
+AM.Activities.Example.AsyncExample.AsyncActivity.Category;Example
 AM.Activities.Example.AsyncExample.AsyncActivity.SearchTags;Async Activity
 AM.Activities.Example.AsyncExample.AsyncActivity.PropertyMetadata.FilePath.DisplayName;File Path
 AM.Activities.Example.AsyncExample.AsyncActivity.PropertyMetadata.FilePath.Description;Path to the file to be processed
 AM.Activities.Example.AsyncExample.AsyncActivity.PropertyMetadata.FilePath.Category;Input
 AM.Activities.Example.ScopeExample.ChildActivity.DisplayName;Scope Child
 AM.Activities.Example.ScopeExample.ChildActivity.Description;Example of a Child for a specific scope
-AM.Activities.Example.ScopeExample.ChildActivity.Category;Scope
+AM.Activities.Example.ScopeExample.ChildActivity.Category;Example
 AM.Activities.Example.ScopeExample.ChildActivity.PropertyMetadata.Option.DisplayName;Option
 AM.Activities.Example.ScopeExample.ChildActivity.PropertyMetadata.Option.Description;
 AM.Activities.Example.ScopeExample.ChildActivity.PropertyMetadata.Option.Category;
 AM.Activities.Example.ScopeExample.ScopeActivity.DisplayName;Scope Activity
 AM.Activities.Example.ScopeExample.ScopeActivity.Description;Example of a Scope activity
-AM.Activities.Example.ScopeExample.ScopeActivity.Category;Scope
+AM.Activities.Example.ScopeExample.ScopeActivity.Category;Example
 AM.Activities.Example.ScopeExample.ScopeActivity.SearchTags;
+AM.Activities.Example.ScopeExample.TextToSpeechActivity.DisplayName;Text To Speech
+AM.Activities.Example.TextToSpeechActivity.Description;
+AM.Activities.Example.TextToSpeechActivity.Category;Example
+AM.Activities.Example.TextToSpeechActivity.PropertyMetadata.Text.DisplayName;Text
+AM.Activities.Example.TextToSpeechActivity.PropertyMetadata.Text.Description;Text to be spoken
+AM.Activities.Example.TextToSpeechActivity.PropertyMetadata.Text.Category;Input

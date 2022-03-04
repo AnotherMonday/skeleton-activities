@@ -22,6 +22,7 @@ namespace AM.Activities.Example.AsyncExample
         /// </summary>
         [Editor(typeof(FileBrowserDialogEditor<OpenFileDialog>),
             typeof(DialogPropertyValueEditor))] // InArguments can be displayed with a custom editor to add more functionality. In this case it will show a FileDialog
+        [RequiredArgument]
         public InArgument<string> FilePath { get; set; }
 
         /// <summary>
