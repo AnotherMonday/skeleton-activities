@@ -32,7 +32,7 @@ AM.Activities.Example.ErrorMessageExample.ErrorMessageActivity.PropertyMetadata.
 AM.Activities.Example.ErrorMessageExample.ErrorMessageActivity.PropertyMetadata.Output.Description;Output Value
 AM.Activities.Example.ErrorMessageExample.ErrorMessageActivity.PropertyMetadata.Output.Category;Output
 AM.Activities.Example.ErrorMessageExample.WarningMessageActivity.DisplayName;Warning Message
-AM.Activities.Example.ErrorMessageExample.WarningMessageActivity.Description;Example of how to create a Error Message
+AM.Activities.Example.ErrorMessageExample.WarningMessageActivity.Description;Example of how to create an Error Message
 AM.Activities.Example.ErrorMessageExample.WarningMessageActivity.Category;Example
 AM.Activities.Example.ErrorMessageExample.WarningMessageActivity.SearchTags;Warning
 AM.Activities.Example.ErrorMessageExample.WarningMessageActivity.PropertyMetadata.Text.DisplayName;Text
