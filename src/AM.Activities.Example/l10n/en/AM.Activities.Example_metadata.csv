@@ -22,7 +22,7 @@ AM.Activities.Example.ExampleCodeActivity.PropertyMetadata.Output.DisplayName;Ou
 AM.Activities.Example.ExampleCodeActivity.PropertyMetadata.Output.Description;Output
 AM.Activities.Example.ExampleCodeActivity.PropertyMetadata.Output.Category;Output
 AM.Activities.Example.ErrorMessageExample.ErrorMessageActivity.DisplayName;Error Message
-AM.Activities.Example.ErrorMessageExample.ErrorMessageActivity.Description;Example of how to create a Error Message
+AM.Activities.Example.ErrorMessageExample.ErrorMessageActivity.Description;Example of how to create an Error Message
 AM.Activities.Example.ErrorMessageExample.ErrorMessageActivity.Category;Example
 AM.Activities.Example.ErrorMessageExample.ErrorMessageActivity.SearchTags;Error
 AM.Activities.Example.ErrorMessageExample.ErrorMessageActivity.PropertyMetadata.Text.DisplayName;Text
@@ -42,11 +42,11 @@ AM.Activities.Example.ErrorMessageExample.WarningMessageActivity.PropertyMetadat
 AM.Activities.Example.ErrorMessageExample.WarningMessageActivity.PropertyMetadata.Output.Description;
 AM.Activities.Example.ErrorMessageExample.WarningMessageActivity.PropertyMetadata.Output.Category;Output
 AM.Activities.Example.AsyncExample.AsyncWithResultActivity.DisplayName;Async Activity with Result
-AM.Activities.Example.AsyncExample.AsyncWithResultActivity.Description;Example of a Async Activity with Result
+AM.Activities.Example.AsyncExample.AsyncWithResultActivity.Description;Example of an Async Activity with Result
 AM.Activities.Example.AsyncExample.AsyncWithResultActivity.Category;Example
 AM.Activities.Example.AsyncExample.AsyncWithResultActivity.SearchTags;Async Activity, Result
 AM.Activities.Example.AsyncExample.AsyncActivity.DisplayName;Async Activity
-AM.Activities.Example.AsyncExample.AsyncActivity.Description;Example of a Async Activity
+AM.Activities.Example.AsyncExample.AsyncActivity.Description;Example of an Async Activity
 AM.Activities.Example.AsyncExample.AsyncActivity.Category;Example
 AM.Activities.Example.AsyncExample.AsyncActivity.SearchTags;Async Activity
 AM.Activities.Example.AsyncExample.AsyncActivity.PropertyMetadata.FilePath.DisplayName;File Path
