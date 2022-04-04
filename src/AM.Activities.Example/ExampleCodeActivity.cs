@@ -12,6 +12,7 @@ namespace AM.Activities.Example
         /// <summary>
         ///     Attributes can be set directly above the properties as shown here.
         /// </summary>
+        [RequiredArgument] // Specifies that this property needs to be set 
         public InArgument<string> Text { get; set; }
 
         /// <summary>
