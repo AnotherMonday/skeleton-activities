@@ -4,7 +4,6 @@ using System.ComponentModel;
 using System.Windows.Forms;
 using AM.Activities.Common.BaseActivities;
 using AM.Activities.Common.Design.Editors;
-using AM.ComposerActivitiesBridge.Attributes;
 
 namespace AM.Activities.Example
 {
@@ -13,11 +12,7 @@ namespace AM.Activities.Example
         /// <summary>
         ///     Attributes can be set directly above the properties as shown here.
         /// </summary>
-        [Category("Input")] // Specifies the name of the category in which to group the property.
-        [DisplayName("Input Text*")] // Specifies the display name for this property.
         [RequiredArgument] // Specifies that this property needs to be set 
-        [VariableSelectionInputTextPopup] // For this property, we show a variable dialog.
-        [Description("This text will be shown in the output")] // Specifies a description for a property
         public InArgument<string> Text { get; set; }
 
         /// <summary>

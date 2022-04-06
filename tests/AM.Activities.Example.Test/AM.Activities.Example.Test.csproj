@@ -1,10 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="..\..\packages\NUnit3TestAdapter.3.17.0\build\net35\NUnit3TestAdapter.props" Condition="Exists('..\..\packages\NUnit3TestAdapter.3.17.0\build\net35\NUnit3TestAdapter.props')" />
+  <Import Project="..\..\packages\NUnit.3.12.0\build\NUnit.props" Condition="Exists('..\..\packages\NUnit.3.12.0\build\NUnit.props')" />
   <Import Project="..\..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
-  <Import Project="..\..\packages\NUnit.3.12.0\build\NUnit.props" Condition="Exists('..\..\packages\NUnit.3.12.0\build\NUnit.props')" />
   <Import Project="..\..\packages\NUnit3TestAdapter.3.16.1\build\net35\NUnit3TestAdapter.props" Condition="Exists('..\..\packages\NUnit3TestAdapter.3.16.1\build\net35\NUnit3TestAdapter.props')" />
-  <Import Project="..\..\packages\NUnit.3.12.0\build\NUnit.props" Condition="Exists('..\..\packages\NUnit.3.12.0\build\NUnit.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -43,47 +42,32 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AM.Activities.Common, Version=2.0.158.50185, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\AM.Activities.Common.2.0.158\lib\net462\AM.Activities.Common.dll</HintPath>
+    <Reference Include="AM.Activities.Common, Version=2.2.442.21487, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\AM.Activities.Common.2.2.442\lib\net462\AM.Activities.Common.dll</HintPath>
     </Reference>
-    <Reference Include="AM.Activities.Interfaces, Version=2.0.79.28091, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\AM.Activities.Interfaces.2.0.79\lib\net462\AM.Activities.Interfaces.dll</HintPath>
+    <Reference Include="AM.Activities.Interfaces, Version=2.2.26.22980, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\AM.Activities.Interfaces.2.2.26\lib\net462\AM.Activities.Interfaces.dll</HintPath>
     </Reference>
-    <Reference Include="AM.AMProLibrary, Version=1.4.24.62232, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\AM.AMProLibrary.1.4.24\lib\net462\AM.AMProLibrary.dll</HintPath>
+    <Reference Include="AM.Artefacts, Version=2.3.5.59488, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\AM.ComposerActivitiesBridge.2.3.5\lib\net462\AM.Artefacts.dll</HintPath>
     </Reference>
-    <Reference Include="AM.Artefacts, Version=2.0.79.28091, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\AM.ComposerActivitiesBridge.2.0.79\lib\net462\AM.Artefacts.dll</HintPath>
-    </Reference>
-    <Reference Include="AM.ComposerActivitiesBridge, Version=2.0.79.28091, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\AM.ComposerActivitiesBridge.2.0.79\lib\net462\AM.ComposerActivitiesBridge.dll</HintPath>
-    </Reference>
-    <Reference Include="AM.Core.Db.DataAccess, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\AM.Core.Db.DataAccess.1.2.25\lib\net462\AM.Core.Db.DataAccess.dll</HintPath>
-    </Reference>
-    <Reference Include="AM.Core.Db.DomainModelEntities, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\AM.Core.Db.DataAccess.1.2.25\lib\net462\AM.Core.Db.DomainModelEntities.dll</HintPath>
+    <Reference Include="AM.ComposerActivitiesBridge, Version=2.3.5.59488, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\AM.ComposerActivitiesBridge.2.3.5\lib\net462\AM.ComposerActivitiesBridge.dll</HintPath>
     </Reference>
     <Reference Include="AM.Core.Protocol.Writer, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\AM.Core.Protocol.Writer.1.3.33\lib\net462\AM.Core.Protocol.Writer.dll</HintPath>
     </Reference>
-    <Reference Include="AM.Encryption, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\AM.Encryption.1.2.5\lib\net452\AM.Encryption.dll</HintPath>
-    </Reference>
-    <Reference Include="AM.ExternalResources, Version=1.2.8.20966, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\AM.ExternalResources.1.2.4\lib\net452\AM.ExternalResources.dll</HintPath>
-    </Reference>
-    <Reference Include="AM.Localization, Version=0.7.32.47906, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\AM.Localization.0.7.32\lib\net462\AM.Localization.dll</HintPath>
-    </Reference>
-    <Reference Include="AM.Localization.Interfaces, Version=0.7.32.47906, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\AM.Localization.Interfaces.0.7.32\lib\net462\AM.Localization.Interfaces.dll</HintPath>
+    <Reference Include="AM.ExternalResources, Version=1.0.33.54311, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\AM.ExternalResources.1.0.33.54311\lib\net45\AM.ExternalResources.dll</HintPath>
     </Reference>
     <Reference Include="AM.Logging, Version=2.4.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\AM.Logging.2.4.53\lib\net462\AM.Logging.dll</HintPath>
+      <HintPath>..\..\packages\AM.Logging.2.4.56\lib\net462\AM.Logging.dll</HintPath>
     </Reference>
     <Reference Include="AM.PluginAssembly, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\AM.PluginAssembly.1.1.48\lib\net462\AM.PluginAssembly.dll</HintPath>
+      <HintPath>..\..\packages\AM.PluginAssembly.1.1.62\lib\net462\AM.PluginAssembly.dll</HintPath>
+    </Reference>
+    <Reference Include="AM.Utilities, Version=1.0.46.41885, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\AM.Utilities.1.0.46\lib\net462\AM.Utilities.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
@@ -99,19 +83,15 @@
     </Reference>
     <Reference Include="Nito.AsyncEx, Version=3.0.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Nito.AsyncEx.3.0.1\lib\net45\Nito.AsyncEx.dll</HintPath>
-      <Private>True</Private>
     </Reference>
     <Reference Include="Nito.AsyncEx.Concurrent, Version=3.0.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Nito.AsyncEx.3.0.1\lib\net45\Nito.AsyncEx.Concurrent.dll</HintPath>
-      <Private>True</Private>
     </Reference>
     <Reference Include="Nito.AsyncEx.Enlightenment, Version=3.0.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Nito.AsyncEx.3.0.1\lib\net45\Nito.AsyncEx.Enlightenment.dll</HintPath>
-      <Private>True</Private>
     </Reference>
     <Reference Include="nunit.framework, Version=3.12.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
       <HintPath>..\..\packages\NUnit.3.12.0\lib\net45\nunit.framework.dll</HintPath>
-      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Activities" />
@@ -137,14 +117,12 @@
     <PropertyGroup>
       <ErrorText>Dieses Projekt verweist auf mindestens ein NuGet-Paket, das auf diesem Computer fehlt. Verwenden Sie die Wiederherstellung von NuGet-Paketen, um die fehlenden Dateien herunterzuladen. Weitere Informationen finden Sie unter "http://go.microsoft.com/fwlink/?LinkID=322105". Die fehlende Datei ist "{0}".</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\..\packages\NUnit.3.12.0\build\NUnit.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\NUnit.3.12.0\build\NUnit.props'))" />
-    <Error Condition="!Exists('..\..\packages\AM.PluginAssembly.1.1.48\Build\AM.PluginAssembly.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\AM.PluginAssembly.1.1.48\Build\AM.PluginAssembly.targets'))" />
-    <Error Condition="!Exists('..\..\packages\AM.Activities.Common.2.0.158\build\AM.Activities.Common.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\AM.Activities.Common.2.0.158\build\AM.Activities.Common.targets'))" />
     <Error Condition="!Exists('..\..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
     <Error Condition="!Exists('..\..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\NUnit.3.12.0\build\NUnit.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\NUnit.3.12.0\build\NUnit.props'))" />
     <Error Condition="!Exists('..\..\packages\NUnit3TestAdapter.3.17.0\build\net35\NUnit3TestAdapter.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\NUnit3TestAdapter.3.17.0\build\net35\NUnit3TestAdapter.props'))" />
+    <Error Condition="!Exists('..\..\packages\AM.PluginAssembly.1.1.62\Build\AM.PluginAssembly.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\AM.PluginAssembly.1.1.62\Build\AM.PluginAssembly.targets'))" />
   </Target>
-  <Import Project="..\..\packages\AM.PluginAssembly.1.1.48\Build\AM.PluginAssembly.targets" Condition="Exists('..\..\packages\AM.PluginAssembly.1.1.48\Build\AM.PluginAssembly.targets')" />
-  <Import Project="..\..\packages\AM.Activities.Common.2.0.158\build\AM.Activities.Common.targets" Condition="Exists('..\..\packages\AM.Activities.Common.2.0.158\build\AM.Activities.Common.targets')" />
   <Import Project="..\..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+  <Import Project="..\..\packages\AM.PluginAssembly.1.1.62\Build\AM.PluginAssembly.targets" Condition="Exists('..\..\packages\AM.PluginAssembly.1.1.62\Build\AM.PluginAssembly.targets')" />
 </Project>
