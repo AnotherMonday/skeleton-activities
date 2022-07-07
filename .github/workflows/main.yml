@@ -1,0 +1,15 @@
+name: Main
+on: push
+
+jobs:
+    mirror:
+    runs-on: ubuntu-latest
+    steps:
+      - name: git-sync
+        uses: wei/git-sync@v3
+        with:
+          source_repo: "git@github.com:HylandSoftware/AutoPro.HylandRPA.Lib.ActivitiesSkeleton.git"
+          source_branch: "refs/remotes/source/*"
+          destination_repo: "git@github.com:AnotherMonday/skeleton-activities.git"
+          destination_branch: "refs/heads/*"
+          ssh_private_key: ${{ secrets.SSHPRIVATEKEYFORMIRRORING }}
