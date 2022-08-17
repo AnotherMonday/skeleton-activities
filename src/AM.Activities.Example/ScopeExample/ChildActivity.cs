@@ -13,8 +13,7 @@ namespace AM.Activities.Example.ScopeExample
         {
             // Indicates that this activity should reside inside a specific scope activity in this case ScopeActivity
             Constraints.Add(
-                ActivityConstraints.CreateAncestorConstraint<ChildActivity>(typeof(ScopeActivity),
-                    isWarning: true));
+                ActivityConstraints.CreateAncestorConstraint(typeof(ScopeActivity), isWarning: true));
         }
 
         /// <summary>
@@ -29,11 +28,7 @@ namespace AM.Activities.Example.ScopeExample
         protected override void ExecuteActivity(CodeActivityContext context)
         {
             // Get the ExampleApplication that has been set in the scope activity from the current context.
-            IExampleApplication exampleApplication =
-                context.DataContext.GetProperties()[ScopeActivity.ScopeContextItemName].GetValue(context.DataContext) as
-                    IExampleApplication;
-
-            if (exampleApplication != null)
+            if (context.DataContext.GetProperties()[ScopeActivity.ScopeContextItemName].GetValue(context.DataContext) is IExampleApplication exampleApplication)
             {
                 Option.Set(context, exampleApplication.Option.ToString());
             }
