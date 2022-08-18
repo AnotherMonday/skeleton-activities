@@ -1,5 +1,7 @@
 name: Main
-on: push
+on:
+    push:
+        branches: ["master"]
 
 jobs:
     mirror:
@@ -9,7 +11,7 @@ jobs:
             uses: wei/git-sync@v3
             with:
               source_repo: "git@github.com:HylandSoftware/AutoPro.HylandRPA.Lib.ActivitiesSkeleton.git"
-              source_branch: "refs/remotes/source/*"
+              source_branch: "master"
               destination_repo: "git@github.com:AnotherMonday/skeleton-activities.git"
-              destination_branch: "refs/heads/*"
+              destination_branch: "master"
               ssh_private_key: ${{ secrets.SSHPRIVATEKEYFORMIRRORING }}
