@@ -1,8 +1,17 @@
 <ProjectMetadata>
   <ActivityMetadata ActivityType="AM.Activities.Example.DatabaseExample.DatabaseExampleActivity">
     <PropertyMetadata PropertyName="Query" VariablePopup="true" />
+    <PropertyMetadata PropertyName="ResultTable" VariablePopup="true" />
+  </ActivityMetadata>
+  <ActivityMetadata ActivityType="AM.Activities.Example.ExampleCodeActivity">
+    <PropertyMetadata PropertyName="Output" VariablePopup="true" />
+    <PropertyMetadata PropertyName="Text" VariablePopup="true" />
   </ActivityMetadata>
   <ActivityMetadata ActivityType="AM.Activities.Example.ErrorMessageExample.ErrorMessageActivity">
     <PropertyMetadata PropertyName="Text" VariablePopup="true" />
+    <PropertyMetadata PropertyName="Output" VariablePopup="true" />
+  </ActivityMetadata>
+  <ActivityMetadata ActivityType="AM.Activities.Example.ScopeExample.ScopeActivity">
+    <PropertyMetadata PropertyName="List" VariablePopup="true" />
   </ActivityMetadata>
 </ProjectMetadata>
