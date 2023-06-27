@@ -36,10 +36,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AM.Activities.Common, Version=2.4.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\AM.Activities.Common.2.4.125\lib\net48\AM.Activities.Common.dll</HintPath>
+      <HintPath>..\..\packages\AM.Activities.Common.2.4.319\lib\net48\AM.Activities.Common.dll</HintPath>
     </Reference>
     <Reference Include="AM.Activities.Common.Design, Version=2.4.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\AM.Activities.Common.Design.2.4.125\lib\net48\AM.Activities.Common.Design.dll</HintPath>
+      <HintPath>..\..\packages\AM.Activities.Common.Design.2.4.319\lib\net48\AM.Activities.Common.Design.dll</HintPath>
     </Reference>
     <Reference Include="AM.Activities.Interfaces, Version=2.3.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\AM.Activities.Interfaces.2.3.5\lib\net48\AM.Activities.Interfaces.dll</HintPath>

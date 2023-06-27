@@ -1,17 +1,16 @@
 using System.Activities.Presentation;
 using System.Windows;
-using AM.Activities.Common.Design.DesignsInterfaces;
 using AM.Activities.Example.ScopeExample;
 using AM.ComposerActivitiesBridge.Attributes;
 
 namespace AM.Activities.Example.Design.ScopeActivityDesigns
 {
     /// <summary>
-    ///     Scope activity logic. Scope activities need to implement <see cref="IScopeNavigationIcon" />.
+    ///     Scope activity logic.
     /// </summary>
     [DeveloperDesigner(
         typeof(ScopeActivity))] // Indicates that this Design will be used for the ScopeActivity in the composer
-    public partial class ScopeActivityDesigner : IScopeNavigationIcon
+    public partial class ScopeActivityDesigner
     {
         private bool _onlyOnFirstLoad;
 
