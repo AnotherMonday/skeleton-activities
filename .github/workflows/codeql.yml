@@ -1,0 +1,50 @@
+name: "CodeQL"
+
+on:
+  push:
+    branches: [ "develop", "master", "release/*", "support/*" ]
+  pull_request:
+    branches: [ "develop", "master", "release/*", "support/*" ]
+  schedule:
+    - cron: '16 23 * * 4'
+
+env:
+  # Settings for this repository
+  MISC_CI_REF: develop
+  SOLUTION_PATH: "AM.Activities.Example.sln"
+  # General settings
+
+  # If this workflow is triggered by a pull request we are explicitly checking out the last commit on the source branch.
+  # Otherwise, GitHub would checkout an automatically created merge commit (which causes some issues when creating the 
+  # version number for build and package results).
+  # The following line has some weird syntax. This a workaround for the missing decision syntax in GitHub Actions 
+  # expressions (see: https://github.com/actions/runner/issues/409#issuecomment-727565588).
+  CURRENT_SHA: ${{ (github.event_name == 'pull_request' && github.event.pull_request.head.sha) || github.sha }}
+
+jobs:
+  analyze:
+    name: Analyze
+    runs-on: windows-2019
+    timeout-minutes: 360
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          ref: ${{ env.CURRENT_SHA }}
+
+      - uses: actions/checkout@v3
+        with:
+          repository: HylandSoftware/AutoPro.HylandRPA.Misc.CI
+          ref: ${{ env.MISC_CI_REF }}
+          path: ./.github/Misc.CI/
+          token: ${{ secrets.TERRAFORM_MODULES_TOKEN }}
+
+      - uses: ./.github/Misc.CI/.github/actions/CodeQLNetFramework
+        with:
+          gitHubNugetApiKey: "${{ secrets.GH_PACKAGES_RO_PAT }}"
+          solutionPath: ${{ env.SOLUTION_PATH }}
