@@ -25,7 +25,7 @@
   },
   "versionHeightOffset": -1,
   "publicReleaseRefSpec": [
-    "^refs/heads/release/.+$",  // we release out of release/...
-    "^refs/heads/master$"       // we release out from master
+    "^refs/heads/release/.+$",
+    "^refs/heads/master$"
   ]
 }
