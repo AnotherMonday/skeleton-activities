@@ -1,0 +1,31 @@
+{
+  "$schema": "https://raw.githubusercontent.com/AArnott/Nerdbank.GitVersioning/master/src/NerdBank.GitVersioning/version.schema.json",
+  "assemblyVersion": {
+    "precision": "revision"
+  },
+  "version": "23.2",
+  "cloudBuild": {
+    "setAllVariables": true,
+    "setVersionVariables": true,
+    "buildNumber": {
+      "enabled": true,
+      "includeCommitId": {
+        "when": "nonPublicReleaseOnly",
+        "where": "buildMetadata"
+      }
+    }
+  },
+  "nugetPackageVersion": {
+    "semVer": 2
+  },
+  "release": {
+    "branchName": "release/v{version}",
+    "versionIncrement": "minor",
+    "firstUnstableTag": "alpha"
+  },
+  "versionHeightOffset": -1,
+  "publicReleaseRefSpec": [
+    "^refs/heads/release/.+$",
+    "^refs/heads/master$"
+  ]
+}
