@@ -2,15 +2,15 @@ name: "CodeQL"
 
 on:
   push:
-    branches: [ "develop", "master", "release/*", "support/*" ]
+    branches: [ "develop", "main", "release/*", "support/*" ]
   pull_request:
-    branches: [ "develop", "master", "release/*", "support/*" ]
+    branches: [ "develop", "main", "release/*", "support/*" ]
   schedule:
     - cron: '16 23 * * 4'
 
 env:
   # Settings for this repository
-  MISC_CI_REF: develop
+  MISC_CI_REF: main
   SOLUTION_PATH: "AM.Activities.Example.sln"
   # General settings
 
