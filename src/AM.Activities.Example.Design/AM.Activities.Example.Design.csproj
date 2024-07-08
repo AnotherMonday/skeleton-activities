@@ -55,13 +55,13 @@
       <HintPath>..\..\packages\AM.ExternalResources.2.1.3\lib\net48\AM.ExternalResources.dll</HintPath>
     </Reference>
     <Reference Include="AM.Localization, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\AM.Localization.1.0.8\lib\net48\AM.Localization.dll</HintPath>
+      <HintPath>..\..\packages\AM.Localization.1.0.1\lib\net48\AM.Localization.dll</HintPath>
     </Reference>
     <Reference Include="AM.Localization.Interfaces, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\AM.Localization.Interfaces.1.0.8\lib\net48\AM.Localization.Interfaces.dll</HintPath>
+      <HintPath>..\..\packages\AM.Localization.Interfaces.1.0.1\lib\net48\AM.Localization.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="AM.Localization.IO.JSON, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\AM.Localization.IO.JSON.1.0.8\lib\net48\AM.Localization.IO.JSON.dll</HintPath>
+      <HintPath>..\..\packages\AM.Localization.IO.JSON.1.0.1\lib\net48\AM.Localization.IO.JSON.dll</HintPath>
     </Reference>
     <Reference Include="AM.Logging, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\AM.Logging.2.5.37\lib\net48\AM.Logging.dll</HintPath>
