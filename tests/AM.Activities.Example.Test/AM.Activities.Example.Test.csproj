@@ -42,7 +42,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AM.Activities.Common, Version=2.4.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\AM.Activities.Common.2.4.804\lib\net48\AM.Activities.Common.dll</HintPath>
+      <HintPath>..\..\packages\AM.Activities.Common.2.4.960-AMCO-5271\lib\net48\AM.Activities.Common.dll</HintPath>
     </Reference>
     <Reference Include="AM.Activities.Interfaces, Version=2.3.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\AM.Activities.Interfaces.2.3.5\lib\net48\AM.Activities.Interfaces.dll</HintPath>
@@ -57,13 +57,13 @@
       <HintPath>..\..\packages\AM.ExternalResources.2.1.3\lib\net48\AM.ExternalResources.dll</HintPath>
     </Reference>
     <Reference Include="AM.Logging, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\AM.Logging.2.5.16\lib\net48\AM.Logging.dll</HintPath>
+      <HintPath>..\..\packages\AM.Logging.2.5.37\lib\net48\AM.Logging.dll</HintPath>
     </Reference>
     <Reference Include="AM.Native.Display, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\AM.Native.Display.2.1.18\lib\net48\AM.Native.Display.dll</HintPath>
+      <HintPath>..\..\packages\AM.Native.Display.2.1.38\lib\net48\AM.Native.Display.dll</HintPath>
     </Reference>
     <Reference Include="AM.PluginAssembly, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\AM.PluginAssembly.1.2.9\lib\netstandard2.0\AM.PluginAssembly.dll</HintPath>
+      <HintPath>..\..\packages\AM.PluginAssembly.1.2.42\lib\netstandard2.0\AM.PluginAssembly.dll</HintPath>
     </Reference>
     <Reference Include="AM.Utilities, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\AM.Utilities.1.2.46\lib\net48\AM.Utilities.dll</HintPath>
@@ -97,6 +97,9 @@
     </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing.Common, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Drawing.Common.8.0.5\lib\net462\System.Drawing.Common.dll</HintPath>
+    </Reference>
     <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
     </Reference>
@@ -141,9 +144,10 @@
     </PropertyGroup>
     <Error Condition="!Exists('..\..\packages\NUnit.3.12.0\build\NUnit.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\NUnit.3.12.0\build\NUnit.props'))" />
     <Error Condition="!Exists('..\..\packages\NUnit3TestAdapter.3.17.0\build\net35\NUnit3TestAdapter.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\NUnit3TestAdapter.3.17.0\build\net35\NUnit3TestAdapter.props'))" />
-    <Error Condition="!Exists('..\..\packages\AM.PluginAssembly.1.2.9\Build\AM.PluginAssembly.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\AM.PluginAssembly.1.2.9\Build\AM.PluginAssembly.targets'))" />
     <Error Condition="!Exists('..\..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.1\build\Microsoft.Extensions.Logging.Abstractions.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.1\build\Microsoft.Extensions.Logging.Abstractions.targets'))" />
+    <Error Condition="!Exists('..\..\packages\AM.PluginAssembly.1.2.42\Build\AM.PluginAssembly.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\AM.PluginAssembly.1.2.42\Build\AM.PluginAssembly.targets'))" />
   </Target>
-  <Import Project="..\..\packages\AM.PluginAssembly.1.2.9\Build\AM.PluginAssembly.targets" Condition="Exists('..\..\packages\AM.PluginAssembly.1.2.9\Build\AM.PluginAssembly.targets')" />
+  <Import Project="..\..\packages\AM.PluginAssembly.1.2.42\Build\AM.PluginAssembly.targets" Condition="Exists('..\..\packages\AM.PluginAssembly.1.2.42\Build\AM.PluginAssembly.targets')" />
   <Import Project="..\..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.1\build\Microsoft.Extensions.Logging.Abstractions.targets" Condition="Exists('..\..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.1\build\Microsoft.Extensions.Logging.Abstractions.targets')" />
+  <Import Project="..\..\packages\AM.PluginAssembly.1.2.42\Build\AM.PluginAssembly.targets" Condition="Exists('..\..\packages\AM.PluginAssembly.1.2.42\Build\AM.PluginAssembly.targets')" />
 </Project>
