@@ -28,7 +28,8 @@ jobs:
     timeout-minutes: 360
     permissions:
       actions: read
-      contents: read
+      contents: write
+      id-token: write
       security-events: write
 
     steps:
@@ -48,3 +49,9 @@ jobs:
         with:
           gitHubNugetApiKey: "${{ secrets.GH_PACKAGES_RO_PAT }}"
           solutionPath: ${{ env.SOLUTION_PATH }}
+
+      - name: Run Component detection and dependency submission [main only]
+        if: github.ref == 'refs/heads/main'
+        uses: advanced-security/component-detection-dependency-submission-action@v0.0.2
+        with:
+          directoryExclusionList: "**/.github/**"
